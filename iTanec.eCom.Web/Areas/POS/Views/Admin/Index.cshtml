@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1 class="label-info" id="message">Edwin</h1>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var param = new function () { };
+        param.Id = 121;
+        CoreJs.AjaxGet('@Url.Content("~/api/Admin/GetDashboradInfo")', param, GetDashboradInfoSuccess, GetDashboradInfofailed);
+
+    });
+    function GetDashboradInfoSuccess(data) {
+        alert(data);
+        $('#message').val(data);
+    }
+    function GetDashboradInfofailed() {
+        console.log("API request failed");
+    }
+</script>
