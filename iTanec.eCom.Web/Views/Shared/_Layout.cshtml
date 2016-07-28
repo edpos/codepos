@@ -3,7 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <meta name="author" content="iTanec corp">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+    <title>@ViewBag.Title - My eCommerce</title>
     @*@Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")*@
     <!-- Tell the browser to be responsive to screen width -->
@@ -32,31 +36,12 @@
     <script src=@Url.Content("~/assets/plugins/bootstrap/bootstrap.min.js")></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
-   @* <div class="navbar navbar-inverse navbar-fixed-top">
-       <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>*@
         <div class="wrapper">
             <header class="main-header">
                 <!-- Logo -->
                 <a href="index2.html" class="logo">
                     <!-- mini logo for sidebar mini 50x50 pixels -->
-                    <span class="logo-mini"><b>A</b>LT</span>
+                    <span class="logo-mini"><b>p</b>os</span>
                     <!-- logo for regular state and mobile devices -->
                     <span class="logo-lg"><b>POS</b></span>
                 </a>
@@ -293,14 +278,14 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>
-                        Dashboard
-                        <small>Version 2.0</small>
-                    </h1>
-                    <ol class="breadcrumb">
+                    <ol class="breadcrumb pull-left">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                         <li class="active">Dashboard</li>
                     </ol>
+                    <h1>
+                        Dashboard
+                        @*<small>Version 2.0</small>*@
+                    </h1>
                 </section>
                 <!-- Main content -->
                 <section class="content">
@@ -933,12 +918,12 @@
             </div><!-- /.content-wrapper -->
             <footer class="main-footer">
                 <div class="pull-right hidden-xs">
-                    <b>Version</b> 2.3.0
+                    <b>Version</b> 2.1.0
                 </div>
-                <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
+                <strong>Copyright &copy; 2016-2017 <a href="httk://itanec.corp.co.in">iTanec Solutions</a>.</strong> All rights reserved.
             </footer>
             <!-- Control Sidebar -->
-            <aside class="control-sidebar control-sidebar-dark">
+            @*<aside class="control-sidebar control-sidebar-dark">
                 <!-- Create the tabs -->
                 <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
                     <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
@@ -1088,7 +1073,8 @@
                         </form>
                     </div><!-- /.tab-pane -->
                 </div>
-            </aside><!-- /.control-sidebar -->
+            </aside>*@
+            <!-- /.control-sidebar -->
             <!-- Add the sidebar's background. This div must be placed
              immediately after the control sidebar -->
             <div class="control-sidebar-bg"></div>
