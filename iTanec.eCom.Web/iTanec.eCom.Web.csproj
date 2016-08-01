@@ -992,6 +992,8 @@
     <Content Include="Assets\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Assets\plugins\input-mask\phone-codes\phone-codes.json" />
     <Content Include="Areas\POS\Views\Admin\EmployeeList.cshtml" />
+    <Content Include="Areas\POS\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\POS\Views\Shared\_Layout.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\CoreJs.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -1029,7 +1031,6 @@
     <Folder Include="Areas\POS\Models\" />
     <Folder Include="Areas\POS\Views\Dashboard\" />
     <Folder Include="Areas\POS\Views\Home\" />
-    <Folder Include="Areas\POS\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -1072,7 +1073,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52907</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
