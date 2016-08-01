@@ -18,5 +18,9 @@ namespace iTanec.eCom.Web.Areas.POS.Controllers.Admin
         {
             return View();
         }
+        public ActionResult EmployeeList()
+        {
+            return View();
+        }
     }
 }

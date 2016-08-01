@@ -963,7 +963,6 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\POS\Views\web.config" />
-    <Content Include="Areas\POS\Views\Admin\Employees.cshtml" />
     <Content Include="Areas\POS\Views\Admin\Dashboard.cshtml" />
     <Content Include="Areas\POS\Views\Admin\Index.cshtml" />
     <Content Include="Assets\fonts\glyphicons-halflings-regular.eot" />
@@ -992,6 +991,7 @@
     <Content Include="Assets\plugins\datatables\extensions\TableTools\Readme.md" />
     <Content Include="Assets\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Assets\plugins\input-mask\phone-codes\phone-codes.json" />
+    <Content Include="Areas\POS\Views\Admin\EmployeeList.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\CoreJs.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
