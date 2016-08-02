@@ -48,7 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin\DashboardService.cs" />
+    <Compile Include="Admin\EmployeeService.cs" />
     <Compile Include="Admin\IDashboardService.cs" />
+    <Compile Include="Admin\IEmployeeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

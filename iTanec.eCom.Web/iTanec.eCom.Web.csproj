@@ -170,6 +170,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\app.min.js" />
+    <Content Include="app\demo.js" />
+    <Content Include="app\components\dashboard.js" />
+    <Content Include="app\components\dashboard2.js" />
     <Content Include="Assets\css\AdminLTE.css" />
     <Content Include="Assets\css\AdminLTE.min.css" />
     <Content Include="Assets\css\bootstrap.css" />
@@ -229,11 +234,22 @@
     <Content Include="Assets\img\user6-128x128.jpg" />
     <Content Include="Assets\img\user7-128x128.jpg" />
     <Content Include="Assets\img\user8-128x128.jpg" />
-    <Content Include="Assets\js\app.js" />
-    <Content Include="Assets\js\app.min.js" />
-    <Content Include="Assets\js\demo.js" />
-    <Content Include="Assets\js\pages\dashboard.js" />
-    <Content Include="Assets\js\pages\dashboard2.js" />
+    <Content Include="Assets\js\CoreJs.js" />
+    <Content Include="Assets\libs\angular.min.js" />
+    <Content Include="Assets\libs\bootstrap.js" />
+    <Content Include="Assets\libs\bootstrap.min.js" />
+    <None Include="Assets\libs\jquery-1.10.2.intellisense.js" />
+    <Content Include="Assets\libs\jquery-1.10.2.js" />
+    <Content Include="Assets\libs\jquery-1.10.2.min.js" />
+    <None Include="Assets\libs\jquery.validate-vsdoc.js" />
+    <Content Include="Assets\libs\jquery.validate.js" />
+    <Content Include="Assets\libs\jquery.validate.min.js" />
+    <Content Include="Assets\libs\jquery.validate.unobtrusive.js" />
+    <Content Include="Assets\libs\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Assets\libs\modernizr-2.6.2.js" />
+    <Content Include="Assets\libs\respond.js" />
+    <Content Include="Assets\libs\respond.min.js" />
+    <None Include="Assets\libs\_references.js" />
     <Content Include="Assets\plugins\bootstrap\bootstrap.js" />
     <Content Include="Assets\plugins\bootstrap\bootstrap.min.js" />
     <Content Include="Assets\plugins\bootstrap\npm.js" />
@@ -960,8 +976,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\POS\Views\web.config" />
     <Content Include="Areas\POS\Views\Admin\Dashboard.cshtml" />
     <Content Include="Areas\POS\Views\Admin\Index.cshtml" />
@@ -994,19 +1008,7 @@
     <Content Include="Areas\POS\Views\Admin\EmployeeList.cshtml" />
     <Content Include="Areas\POS\Views\_ViewStart.cshtml" />
     <Content Include="Areas\POS\Views\Shared\_Layout.cshtml" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\CoreJs.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="Assets\libs\jquery-1.10.2.min.map" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1023,6 +1025,7 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\shared\" />
     <Folder Include="App_Data\" />
     <Folder Include="Areas\POS\Controllers\Masters\" />
     <Folder Include="Areas\POS\Controllers\Purchase\" />
@@ -1039,7 +1042,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\iTanec.eCom.BusinessComponents\iTanec.eCom.BusinessComponents.csproj">

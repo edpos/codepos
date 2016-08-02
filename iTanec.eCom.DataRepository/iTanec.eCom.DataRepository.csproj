@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin\DashboardRepository.cs" />
+    <Compile Include="Admin\EmployeeRepository.cs" />
     <Compile Include="BaseRepository.cs" />
     <Compile Include="CommonDAO.cs" />
     <Compile Include="ProductDBUtils.cs" />

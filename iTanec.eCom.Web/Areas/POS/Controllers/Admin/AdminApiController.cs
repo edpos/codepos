@@ -1,4 +1,5 @@
 ﻿using iTanec.eCom.BusinessComponents.Admin;
+using iTanec.eCom.BusinessObjects.ViewModel.Admin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +13,15 @@ namespace iTanec.eCom.Web.Areas.POS.Controllers.Admin
     public class AdminApiController : ApiController
     {
         IDashboardService _dashboardService;
+        IEmployeeService employeeService;
 
         public AdminApiController(IDashboardService  manager)
         {
             _dashboardService = manager;
+        }
+        public AdminApiController(IEmployeeService manager)
+        {
+            employeeService = manager;
         }
 
         [Route("GetDashboradInfo")]
@@ -24,5 +30,12 @@ namespace iTanec.eCom.Web.Areas.POS.Controllers.Admin
         {
             return _dashboardService.GetDashBoradManagementDetails();
         }
+        [Route("GetEmployeeInfo")]
+        [HttpGet]
+        public UserVM GetUserInfo(int EmpId)
+        {
+            return employeeService.GetEmployee(EmpId);
+        }
+        
     }
 }

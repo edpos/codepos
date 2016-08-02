@@ -48,9 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Admin\UserGeneralInfoModel.cs" />
+    <Compile Include="Model\Admin\UsersModel.cs" />
     <Compile Include="TransactionalInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UtilConstants.cs" />
+    <Compile Include="ViewModel\Admin\UserVM.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
