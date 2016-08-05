@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace iTanec.eCom.DataRepository
 {
-    public class ProductDBUtils
+    public class PoSDBUtils
     {
         public static List<SqlParameter> CreateParameter<T>(object item, bool IgnoreEmpty)
         {
@@ -284,6 +284,16 @@ namespace iTanec.eCom.DataRepository
             return para;
         }
 
+        public static SqlParameter CreateDataTableParameter(string paramName, DataTable paramDt)
+        {
+            SqlParameter para = new SqlParameter("@" + paramName, paramDt);
+            if (paramDt == null)
+            {
+                para.Value = DBNull.Value;
+            }
+            return para;
+        }
+
         public static DataTable ConvertTo<T>(T[] list)
         {
             DataTable table = CreateTable<T>();
@@ -402,7 +412,6 @@ namespace iTanec.eCom.DataRepository
             {
                 returnValue = byteValue;
             }
-
             return returnValue;
         }
 
@@ -414,7 +423,6 @@ namespace iTanec.eCom.DataRepository
             {
                 returnValue = stringValue.Trim();
             }
-
             return returnValue;
         }
 
@@ -450,9 +458,7 @@ namespace iTanec.eCom.DataRepository
             {
                 returnValue = value;
             }
-
             return returnValue;
-
         }
 
         public static object ConvertInvalidDoubleToDBNull(double? value)
@@ -462,7 +468,6 @@ namespace iTanec.eCom.DataRepository
             {
                 returnValue = value;
             }
-
             return returnValue;
         }
 
@@ -474,7 +479,6 @@ namespace iTanec.eCom.DataRepository
             {
                 returnValue = value;
             }
-
             return returnValue;
         }
 
@@ -491,7 +495,6 @@ namespace iTanec.eCom.DataRepository
             {
                 returnValue = value;
             }
-
             return returnValue;
         }
 
@@ -526,7 +529,6 @@ namespace iTanec.eCom.DataRepository
             {
                 returnValue = value;
             }
-
             return returnValue;
         }
 
@@ -538,7 +540,6 @@ namespace iTanec.eCom.DataRepository
             {
                 returnValue = value;
             }
-
             return returnValue;
         }
 
@@ -550,7 +551,6 @@ namespace iTanec.eCom.DataRepository
             {
                 returnValue = value;
             }
-
             return returnValue;
         }
 
@@ -575,7 +575,6 @@ namespace iTanec.eCom.DataRepository
             {
                 returnValue = timeSpan;
             }
-
             return returnValue;
         }
 
@@ -592,16 +591,6 @@ namespace iTanec.eCom.DataRepository
             return propertyName;
         }
 
-        public static SqlParameter CreateDataTableParameter(string paramName, DataTable paramDt)
-        {
-            SqlParameter para = new SqlParameter("@" + paramName, paramDt);
-            if (paramDt == null)
-            {
-                para.Value = DBNull.Value;
-            }
-
-            return para;
-        }
-
+        
     }
 }

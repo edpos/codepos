@@ -10,9 +10,9 @@ namespace iTanec.eCom.BusinessComponents.Admin
 {
     public class EmployeeService : IEmployeeService
     {
-        public UserVM GetEmployee(int EmpId)
+        public UserListVM GetEmployee(int EmpId)
         {
-            return EmployeeRepository.GetInstance().GetEmployee(EmpId);
+            return EmployeeRepository.GetInstance().GetEmployeeList(EmpId);
         }
     }
 }

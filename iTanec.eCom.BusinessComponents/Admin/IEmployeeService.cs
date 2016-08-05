@@ -4,6 +4,6 @@ namespace iTanec.eCom.BusinessComponents.Admin
 {
     public interface IEmployeeService
     {
-        UserVM GetEmployee(int EmpId);
+        UserListVM GetEmployee(int EmpId);
     }
 }

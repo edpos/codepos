@@ -1,7 +1,7 @@
 ﻿using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using Microsoft.Practices.EnterpriseLibrary.ExceptionHandling;
 
-namespace UIG.Accounting.CrosscuttingServices.ExceptionManagement
+namespace iTanec.eCom.Services.ExceptionManagement
 {
     /// <summary>
     ///For Enterprise Library 6,Exception Manager has to be set before we perform operation .  Initial class that initialize it

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Practices.EnterpriseLibrary.Logging;
 
-namespace UIG.Accounting.CrosscuttingServices.LogManagement
+namespace iTanec.eCom.Services.LogManagement
 {
     /// <summary>
     /// Log Manager is base class that defines how logging is configured.

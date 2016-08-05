@@ -5,10 +5,10 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UIG.Accounting.CrosscuttingServices.DataManagement;
-using UIG.Accounting.CrosscuttingServices.LogManagement;
+using iTanec.eCom.Services.DataManagement;
+using iTanec.eCom.Services.LogManagement;
 
-namespace UIG.Accounting.DataServices
+namespace iTanec.eCom.Services.Services
 {
     public class CommonDAO
     {

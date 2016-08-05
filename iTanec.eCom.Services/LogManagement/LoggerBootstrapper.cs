@@ -1,6 +1,6 @@
 ﻿using Microsoft.Practices.EnterpriseLibrary.Logging;
 
-namespace UIG.Accounting.CrosscuttingServices.LogManagment
+namespace iTanec.eCom.Services.LogManagment
 {
     /// <summary>
     ///For Enterprise Library 6, Log writer has to be set before we perform operation on Log Entry.  Initial class that initialize it

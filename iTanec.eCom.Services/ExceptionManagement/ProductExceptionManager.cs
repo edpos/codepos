@@ -1,7 +1,7 @@
 ﻿using Microsoft.Practices.EnterpriseLibrary.ExceptionHandling;
 using System;
 
-namespace UIG.Accounting.CrosscuttingServices.ExceptionManagement
+namespace iTanec.eCom.Services.ExceptionManagement
 {
     /// <summary>
     /// Exception Manager is base exception class that defines how the exceptions to be handled.

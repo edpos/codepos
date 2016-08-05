@@ -3,7 +3,7 @@ using Microsoft.Practices.EnterpriseLibrary.Data;
 
 using UIG.Accounting.Common;
 
-namespace UIG.Accounting.CrosscuttingServices.DataManagement
+namespace iTanec.eCom.Services.DataManagement
 {
     /// <summary>
     /// Database class provides property for instance of DB

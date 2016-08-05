@@ -32,10 +32,9 @@ namespace iTanec.eCom.Web.Areas.POS.Controllers.Admin
         }
         [Route("GetEmployeeInfo")]
         [HttpGet]
-        public UserVM GetUserInfo(int EmpId)
+        public UserListVM GetUserInfo(int EmpId)
         {
             return employeeService.GetEmployee(EmpId);
         }
-        
     }
 }

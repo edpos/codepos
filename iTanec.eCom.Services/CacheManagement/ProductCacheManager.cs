@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Runtime.Caching;
 
-namespace UIG.Accounting.CrosscuttingServices.CacheManagement
+namespace iTanec.eCom.Services.CacheManagement
 {
     public enum CachePriority
     {

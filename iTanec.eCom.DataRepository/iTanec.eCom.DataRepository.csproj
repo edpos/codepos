@@ -54,7 +54,7 @@
     <Compile Include="Admin\EmployeeRepository.cs" />
     <Compile Include="BaseRepository.cs" />
     <Compile Include="CommonDAO.cs" />
-    <Compile Include="ProductDBUtils.cs" />
+    <Compile Include="PoSDBUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

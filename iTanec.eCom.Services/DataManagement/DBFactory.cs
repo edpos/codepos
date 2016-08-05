@@ -1,7 +1,7 @@
 ﻿using Microsoft.Practices.EnterpriseLibrary.Data;
 using System.Configuration;
 
-namespace UIG.Accounting.CrosscuttingServices.DataManagement
+namespace iTanec.eCom.Services.DataManagement
 {
     /// <summary>
     /// DB Factory class provides appropriate instance of DB according to configuration
