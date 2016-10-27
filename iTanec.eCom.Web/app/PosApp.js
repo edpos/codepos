@@ -15,23 +15,24 @@ var myPosApp;
 
    myPosApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
        debugger;
-      // console.log($location.path('/'));
+      // var baseSiteUrlPath = $("base").first().attr("href");
+      ////var basePath = $location.path('/');
        var viewBase = '/Areas/POS/Views/';
       $routeProvider.
-        when('/EmployeeList', {
-            templateUrl: viewBase + 'Admin/EmployeeList.cshtml',
+        when('/POS/Admin/EmployeeList', {
+            templateUrl: '/POS/Admin//EmployeeList',
         }).
-        when('/showOrders', {
-            templateUrl: 'templates/show-orders.html',
-            controller: 'ShowOrdersController'
+        when('/Sales/CustomerList', {
+            templateUrl: 'Sales/CustomerList',
         }).
         otherwise({
             redirectTo: '/'
         });
-       // Specify HTML5 mode (using the History APIs) or HashBang syntax.
-      $locationProvider.html5Mode(false).hashPrefix('!');
+        //Specify HTML5 mode (using the History APIs) or HashBang syntax.
 
-      //$locationProvider.html5Mode(true);
+      $locationProvider.html5Mode(true);
+
+
   }]);
 
 })();

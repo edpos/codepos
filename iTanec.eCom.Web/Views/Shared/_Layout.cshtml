@@ -1,11 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="iTanec corp">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <base href="/">
 
     <title>@ViewBag.Title - eCommerce</title>
     @*@Styles.Render("~/Content/css")
@@ -154,6 +156,9 @@
                             </a>
                             <ul class="treeview-menu" style="display:none;">
                                 <li><a href=@Url.Content("~/POS/Admin/EmployeeList")>Employee</a></li>
+                            </ul>
+                            <ul class="treeview-menu">
+                                <li><a href=@Url.Content("~/Sales/CustomerList")>Customer</a></li>
                             </ul>
                         </li>
                         <li class="header">LABELS</li>

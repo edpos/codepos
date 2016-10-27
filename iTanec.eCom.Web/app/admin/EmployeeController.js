@@ -2,11 +2,14 @@
    
 //    'use strict';
     
-    myPosApp.controller('EmployeeController', function ($scope) {
+myPosApp.controller('EmployeeController', function ($scope) {
+        debugger;
 
-     debugger;
+        //$scope.location = $location.path(); // '/Home'
+        //$scope.routeName= $route.current.$$route.name; 
+        
         $scope.title = 'Employee List Controller';
-        $scope.Name = 'Edwin Stalin';
+        $scope.Name = 'Employee Edwin';
 
         //activate();
 

@@ -164,12 +164,14 @@
     <Compile Include="Areas\POS\Controllers\BaseController.cs" />
     <Compile Include="Areas\POS\POSAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\admin\CustomerController.js" />
     <Content Include="app\admin\EmployeeController.js" />
     <Content Include="app\admin\Testcontroller.js" />
     <Content Include="app\app.js" />
@@ -1016,6 +1018,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Sales\CustomerList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\shared\" />
