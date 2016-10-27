@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Admin\EmployeeModel.cs" />
     <Compile Include="Model\Admin\UserGeneralInfoModel.cs" />
     <Compile Include="Model\Admin\UserListModel.cs" />
     <Compile Include="Model\Admin\UsersModel.cs" />
